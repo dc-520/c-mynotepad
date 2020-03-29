@@ -17,7 +17,7 @@
             {
                 components.Dispose();
             }
-            base.Dispose(disposing);
+            base.Dispose(disposing); 
         }
 
         #region Windows 窗体设计器生成的代码
@@ -51,7 +51,7 @@
             this.toolStripComboBoxSize});
             this.toolStrip1.Location = new System.Drawing.Point(3, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(588, 55);
+            this.toolStrip1.Size = new System.Drawing.Size(684, 55);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -82,6 +82,7 @@
             this.toolStripButtonBold.Size = new System.Drawing.Size(50, 52);
             this.toolStripButtonBold.Text = "加粗";
             this.toolStripButtonBold.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButtonBold.Click += new System.EventHandler(this.toolStripButtonBold_Click);
             // 
             // toolStripButtonItalic
             // 
@@ -91,12 +92,14 @@
             this.toolStripButtonItalic.Size = new System.Drawing.Size(50, 52);
             this.toolStripButtonItalic.Text = "倾斜";
             this.toolStripButtonItalic.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButtonItalic.Click += new System.EventHandler(this.toolStripButtonItalic_Click);
             // 
             // toolStripComboBoxFont
             // 
             this.toolStripComboBoxFont.Name = "toolStripComboBoxFont";
-            this.toolStripComboBoxFont.Size = new System.Drawing.Size(121, 55);
+            this.toolStripComboBoxFont.Size = new System.Drawing.Size(200, 55);
             this.toolStripComboBoxFont.Text = "字体";
+            this.toolStripComboBoxFont.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBoxFont_SelectedIndexChanged);
             // 
             // toolStripComboBoxSize
             // 
@@ -113,7 +116,9 @@
             "48"});
             this.toolStripComboBoxSize.Name = "toolStripComboBoxSize";
             this.toolStripComboBoxSize.Size = new System.Drawing.Size(121, 55);
-            this.toolStripComboBoxSize.Text = "字号";
+            this.toolStripComboBoxSize.Text = "10";
+            this.toolStripComboBoxSize.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBoxSize_SelectedIndexChanged);
+            this.toolStripComboBoxSize.TextChanged += new System.EventHandler(this.toolStripComboBoxSize_TextChanged);
             // 
             // textBoxNote
             // 
@@ -123,19 +128,20 @@
             this.textBoxNote.Multiline = true;
             this.textBoxNote.Name = "textBoxNote";
             this.textBoxNote.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxNote.Size = new System.Drawing.Size(588, 472);
+            this.textBoxNote.Size = new System.Drawing.Size(684, 530);
             this.textBoxNote.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 530);
+            this.ClientSize = new System.Drawing.Size(690, 588);
             this.Controls.Add(this.textBoxNote);
             this.Controls.Add(this.toolStrip1);
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.Text = "我的记事本";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
