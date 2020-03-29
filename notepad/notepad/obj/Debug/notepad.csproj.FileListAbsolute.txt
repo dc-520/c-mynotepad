@@ -7,3 +7,12 @@ D:\Develop\Vsdevelop\c#\notepad\notepad\obj\Debug\notepad.Properties.Resources.r
 D:\Develop\Vsdevelop\c#\notepad\notepad\obj\Debug\notepad.csproj.GenerateResource.Cache
 D:\Develop\Vsdevelop\c#\notepad\notepad\obj\Debug\notepad.exe
 D:\Develop\Vsdevelop\c#\notepad\notepad\obj\Debug\notepad.pdb
+D:\Develop\Vsdevelop\c#\mynotepad\notepad\notepad\bin\Debug\notepad.exe.config
+D:\Develop\Vsdevelop\c#\mynotepad\notepad\notepad\obj\Debug\notepad.exe
+D:\Develop\Vsdevelop\c#\mynotepad\notepad\notepad\obj\Debug\notepad.pdb
+D:\Develop\Vsdevelop\c#\mynotepad\notepad\notepad\bin\Debug\notepad.exe
+D:\Develop\Vsdevelop\c#\mynotepad\notepad\notepad\bin\Debug\notepad.pdb
+D:\Develop\Vsdevelop\c#\mynotepad\notepad\notepad\obj\Debug\notepad.csprojResolveAssemblyReference.cache
+D:\Develop\Vsdevelop\c#\mynotepad\notepad\notepad\obj\Debug\notepad.Form1.resources
+D:\Develop\Vsdevelop\c#\mynotepad\notepad\notepad\obj\Debug\notepad.Properties.Resources.resources
+D:\Develop\Vsdevelop\c#\mynotepad\notepad\notepad\obj\Debug\notepad.csproj.GenerateResource.Cache
