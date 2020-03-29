@@ -16,3 +16,4 @@ D:\Develop\Vsdevelop\c#\mynotepad\notepad\notepad\obj\Debug\notepad.csprojResolv
 D:\Develop\Vsdevelop\c#\mynotepad\notepad\notepad\obj\Debug\notepad.Form1.resources
 D:\Develop\Vsdevelop\c#\mynotepad\notepad\notepad\obj\Debug\notepad.Properties.Resources.resources
 D:\Develop\Vsdevelop\c#\mynotepad\notepad\notepad\obj\Debug\notepad.csproj.GenerateResource.Cache
+D:\Develop\Vsdevelop\c#\mynotepad\notepad\notepad\obj\Debug\notepad.Form2.resources

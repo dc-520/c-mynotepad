@@ -36,6 +36,10 @@
             this.toolStripComboBoxFont = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripComboBoxSize = new System.Windows.Forms.ToolStripComboBox();
             this.textBoxNote = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.toolStripLabelMake = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripButtonNew = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,15 +47,17 @@
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButtonNew,
             this.toolStripButtonopen,
             this.toolStripButtonsave,
             this.toolStripButtonBold,
             this.toolStripButtonItalic,
             this.toolStripComboBoxFont,
-            this.toolStripComboBoxSize});
+            this.toolStripComboBoxSize,
+            this.toolStripLabelMake});
             this.toolStrip1.Location = new System.Drawing.Point(3, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(684, 55);
+            this.toolStrip1.Size = new System.Drawing.Size(819, 55);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -64,6 +70,7 @@
             this.toolStripButtonopen.Size = new System.Drawing.Size(55, 52);
             this.toolStripButtonopen.Text = " 打开";
             this.toolStripButtonopen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButtonopen.Click += new System.EventHandler(this.toolStripButtonopen_Click);
             // 
             // toolStripButtonsave
             // 
@@ -73,6 +80,7 @@
             this.toolStripButtonsave.Size = new System.Drawing.Size(50, 52);
             this.toolStripButtonsave.Text = "保存";
             this.toolStripButtonsave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButtonsave.Click += new System.EventHandler(this.toolStripButtonsave_Click);
             // 
             // toolStripButtonBold
             // 
@@ -128,19 +136,40 @@
             this.textBoxNote.Multiline = true;
             this.textBoxNote.Name = "textBoxNote";
             this.textBoxNote.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxNote.Size = new System.Drawing.Size(684, 530);
+            this.textBoxNote.Size = new System.Drawing.Size(819, 538);
             this.textBoxNote.TabIndex = 1;
+            this.textBoxNote.TextChanged += new System.EventHandler(this.textBoxNote_TextChanged);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // toolStripLabelMake
+            // 
+            this.toolStripLabelMake.Name = "toolStripLabelMake";
+            this.toolStripLabelMake.Size = new System.Drawing.Size(0, 52);
+            // 
+            // toolStripButtonNew
+            // 
+            this.toolStripButtonNew.Image = global::notepad.Properties.Resources.blank;
+            this.toolStripButtonNew.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonNew.Name = "toolStripButtonNew";
+            this.toolStripButtonNew.Size = new System.Drawing.Size(50, 52);
+            this.toolStripButtonNew.Text = "新建";
+            this.toolStripButtonNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButtonNew.Click += new System.EventHandler(this.toolStripButtonNew_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 588);
+            this.ClientSize = new System.Drawing.Size(825, 596);
             this.Controls.Add(this.textBoxNote);
             this.Controls.Add(this.toolStrip1);
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.Text = "我的记事本";
+            this.Text = "Trl的记事本";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -159,6 +188,10 @@
         private System.Windows.Forms.ToolStripComboBox toolStripComboBoxFont;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBoxSize;
         private System.Windows.Forms.TextBox textBoxNote;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabelMake;
+        private System.Windows.Forms.ToolStripButton toolStripButtonNew;
     }
 }
 
